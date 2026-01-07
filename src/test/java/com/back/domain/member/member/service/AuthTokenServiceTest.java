@@ -1,4 +1,4 @@
-package com.back.domain.post.member.member.service;
+package com.back.domain.member.member.service;
 
 import com.back.domain.member.member.entity.Member;
 import com.back.domain.member.member.service.AuthTokenService;
