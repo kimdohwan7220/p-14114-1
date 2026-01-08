@@ -1,8 +1,6 @@
 package com.back.domain.member.member.service;
 
 import com.back.domain.member.member.entity.Member;
-import com.back.domain.member.member.service.AuthTokenService;
-import com.back.domain.member.member.service.MemberService;
 import com.back.standard.util.Ut;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
@@ -122,7 +120,8 @@ public class AuthTokenServiceTest {
                 .containsAllEntriesOf(
                         Map.of(
                                 "id", memberUser1.getId(),
-                                "username", memberUser1.getUsername()
+                                "username", memberUser1.getUsername(),
+                                "name", memberUser1.getName()
                         )
                 );
     }
